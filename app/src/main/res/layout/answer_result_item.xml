@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayoutItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#2196F3"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/questionItemNumLabel"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/roundstyle2"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/questionItemTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp"
+            android:text="Question"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/questionItemNumLabel"
+            app:layout_constraintTop_toTopOf="@id/questionItemNumLabel" />
+
+        <TextView
+            android:id="@+id/trueAnswerItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="True Answer:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/ConstraintLayoutItem"
+            app:layout_constraintStart_toStartOf="@id/questionItemTextView"
+            app:layout_constraintTop_toBottomOf="@id/questionItemNumLabel" />
+
+
+        <TextView
+            android:id="@+id/questionAnswerItemText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="qa"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/trueAnswerItemText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/trueAnswerItemText"
+            app:layout_constraintTop_toTopOf="@+id/trueAnswerItemText" />
+
+        <TextView
+            android:id="@+id/userAnswerItemLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="False Answer"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/questionItemNumLabel"
+            app:layout_constraintStart_toStartOf="@id/questionItemTextView"
+            app:layout_constraintTop_toBottomOf="@id/questionAnswerItemText" />
+
+        <TextView
+            android:id="@+id/userAnswerItemText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="ua"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/userAnswerItemLabel"
+            app:layout_constraintTop_toBottomOf="@id/questionAnswerItemText"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

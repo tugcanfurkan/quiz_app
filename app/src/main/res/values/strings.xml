@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">Quiz App</string>
+
+    <!--Main-->
+    <string name="play_button">Play</string>
+
+    <!--Quiz Screen-->
+    <string name="question_text">Question</string>
+    <string name="btn_answer">Answer</string>
+    <string name="btn_skip_question">Skip the question</string>
+    <string name="btn_leave">Leave</string>
+
+    <!--Quiz Result Screen-->
+
+    <string name="check_results">Check Results</string>
+    <string name="finish_message">Quiz Result</string>
+    <string name="btn_done">Done</string>
+
+
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    tools:context=".QuizScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_text"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/questionNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="1/10"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="6dp"
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_question_box"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Question Text"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/btn_answer"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/optABtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="6dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Answer 1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/optBBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="6dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Answer 2"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/optCBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="6dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Answer 3"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/optDBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="6dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Answer 4"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/passBtn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2196F3"
+            android:text="@string/btn_skip_question"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#006A9A"
+            android:text="@string/btn_leave"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
