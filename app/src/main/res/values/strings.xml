@@ -11,11 +11,22 @@
     <string name="btn_skip_question">Skip the question</string>
     <string name="btn_leave">Leave</string>
 
+
     <!--Quiz Result Screen-->
 
     <string name="check_results">Check Results</string>
     <string name="finish_message">Quiz Result</string>
     <string name="btn_done">Done</string>
+
+    <!--Answer Result Dialog-->
+
+    <string name="text_answer_result">Answer Result</string>
+    <string name="text_question">Question</string>
+    <string name="text_answer">Question</string>
+    <string name="text_your_answer">Question</string>
+    <string name="text_true_answer">True Answer</string>
+    <string name="text_empty">Quiz Result</string>
+    <string name="btn_next">Next</string>
 
 
 </resources>

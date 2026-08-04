@@ -150,6 +150,8 @@ class QuizScreen : AppCompatActivity() {
             answerResultDialogImage.setImageResource(R.drawable.baseline_highlight_off_24)
         }
 
+        btnNextQuestion.text = if (questionOrder==9) "Finish" else "Next"
+
         btnNextQuestion.setOnClickListener {
             loadNewQuestion()
             dialog.dismiss()
